@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../api/api';
-import { Swords, Save, Lock, Clock } from 'lucide-react';
+import { Save, Lock, Clock } from 'lucide-react';
 
 const PHASES = [
   { key: 'ROUND_OF_32', label: '16 Avos de Final', short: '16 Avos', settingPrefix: 'r32' },
@@ -13,7 +13,7 @@ const PHASES = [
 
 export const MataMata: React.FC = () => {
   const [matches, setMatches] = useState<any[]>([]);
-  const [predictions, setPredictions] = useState<any[]>([]);
+  const [, setPredictions] = useState<any[]>([]);
   const [settings, setSettings] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   

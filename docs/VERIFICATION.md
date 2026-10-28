@@ -49,3 +49,7 @@ These advisories remain a maintenance item. This documentation/publication task 
 | `qs` | moderate | No |
 
 These advisories remain a maintenance item. This documentation/publication task did not perform dependency upgrades or validate a production security posture.
+
+## Frontend build follow-up
+
+The frontend initially failed TypeScript compilation on an identical duplicate default property and unused bindings. Those were corrected in the isolated copy without changing configured values or UI flows. The final `npm run build` passed. `npm run lint` still reports inherited strict-lint findings and is not claimed as passing. The API production build also passed; no live tournament or database was modified.

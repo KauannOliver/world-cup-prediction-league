@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../api/api';
-import { Check, X, ShieldAlert, Trash2, Save, Play, ChevronUp, ChevronDown } from 'lucide-react';
+import { Check, X, Trash2, Save, Play, ChevronUp, ChevronDown } from 'lucide-react';
 
 const PHASES = [
   { key: 'GROUPS', label: 'Fase de Grupos' },
@@ -17,13 +17,13 @@ export const AdminDashboard: React.FC = () => {
   const [activeResultTab, setActiveResultTab] = useState<string>('GROUPS');
   const [pendingUsers, setPendingUsers] = useState<any[]>([]);
   const [allUsers, setAllUsers] = useState<any[]>([]);
-  const [settings, setSettings] = useState<any>(null);
+  const [, setSettings] = useState<any>(null);
   const [deadline, setDeadline] = useState('');
   
   const [knockoutSettings, setKnockoutSettings] = useState<any>({
     r32_deadline: '', r32_visible: false,
     r16_deadline: '', r16_visible: false,
-    qf_deadline: '', r16_visible: false,
+    qf_deadline: '',
     qf_visible: false,
     sf_deadline: '', sf_visible: false,
     third_deadline: '', third_visible: false,
