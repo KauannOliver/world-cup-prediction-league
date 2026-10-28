@@ -2,7 +2,6 @@
 
 # World Cup Prediction League
 
-> Public source edition. Configure credentials locally and use empty or synthetic inputs. Company and institution names identify the original integration context; this repository does not claim affiliation or endorsement.
 An end-to-end prediction game for group standings, knockout matches, and a shared leaderboard.
 
 **React · NestJS · PostgreSQL · Prisma**
@@ -57,4 +56,19 @@ backend/   NestJS API, Prisma schema, migrations, seed
 frontend/  React client and Vite configuration
 ```
 
-No license is defined in this repository.
+
+
+
+## Snapshot review
+
+Setup and capabilities are based on the included code. External services and operating-system-specific integrations were not exercised during this publication review. Use synthetic data in a separate local environment.
+
+Git-triggered Vercel deployment is disabled in the included web configurations. This update publishes source and documentation only.
+
+## License
+
+Original application code is available under the [MIT license](LICENSE). Third-party libraries, models, fonts and bundled assets retain their own licenses.
+
+## Verification record
+
+See [snapshot checks and remaining limitations](docs/VERIFICATION.md).
